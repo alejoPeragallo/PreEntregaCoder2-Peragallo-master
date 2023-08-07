@@ -4,8 +4,8 @@
     font-family: 'Oxanium', cursive;
     box-sizing: border-box;
 }
-.body{
-   background-color: #7e3838;
+body{
+    background: url(../Imagenes/fondo.png) no-repeat
 }
 .vinculos{
     text-align: center;
@@ -317,7 +317,7 @@ h3.subtitulo {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
     @media(max-width:1024px){

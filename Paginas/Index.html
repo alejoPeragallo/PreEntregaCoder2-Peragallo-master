@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 <body>
     <header>
@@ -21,7 +22,7 @@
     <main>
         <h3 class="titulo">Tendencias</h3>
         <div>
-            <section>
+            <section data-aos="slide-right">
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -46,7 +47,7 @@
             </section>
             <!--Foto numero DOS-->
             <h3 class="subtituloIzq">Lorem ipsum dolor sit amet.</h3>
-            <a href="./hombre.html"><img src="../Imagenes/ZapatillasMJ.jpg" class="imagenGrande" alt="Zapatillas MJ Partido"></a>
+            <a href="./hombre.html"><img data-aos="fade-down-left" src="../Imagenes/ZapatillasMJ.jpg" class="imagenGrande" alt="Zapatillas MJ Partido"></a>
             <p class="caja">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, veritatis provident, natus, autem voluptatem impedit voluptates ipsa ipsam suscipit nemo eligendi. Voluptatem id voluptas dignissimos dolorum accusantium provident exercitationem explicabo molestiae repudiandae, tempore tempora nobis magnam ratione, voluptate nesciunt odio. <a href="/Paginas/hombre.html">
                 <button class="botonComprar">Ver mas</button></a>
             </p>           
@@ -60,11 +61,10 @@
     </main>
 
     <!--VIDEO-->
-    <div class="contenedorVideo">
+    <div class="contenedorVideo" data-aos="flip-up">
         <h3 class="subtituloIzq">Lorem ipsum dolor sit.</h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/xvkL9tTx1S4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <footer class="pieDePag">
         <a href="./ayuda.html">Ayuda</a>
         <div class="iconos">
@@ -75,5 +75,13 @@
         <a href=""></a><button class="boton">Suscribite para recibir noticias</button>
         <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4647.409333360261!2d-58.47104946140475!3d-34.54812011202366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1688127205910!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        Offset: 300,
+        once: true,
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

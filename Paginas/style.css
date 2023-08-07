@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    background: url(../Imagenes/fondo.png) no-repeat
+    background: url(../Imagenes/fondo.png) no-repeat;
 }
 .vinculos{
     text-align: center;
@@ -132,6 +132,12 @@ h3.subtitulo {
 .pieDePag a{
     color: black;
     font-weight: bold;
+}
+.sombra{
+    box-shadow: -9px 6px 0px 0px rgba(0,0,0,0.8);
+    -webkit-box-shadow: -9px 6px 0px 0px rgba(0,0,0,0.8);
+    -moz-box-shadow: -9px 6px 0px 0px rgba(0,0,0,0.8);
+    margin-left: 15px;
 }
 .mapa{
     border: solid black 10px;
